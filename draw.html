@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-hant-tw">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device">
+        <img src="img/original.webp" alt="我的世界" class="header-image">
+        <title>
+          最新消息
+        </title>
+        <link href="style.css" rel="stylesheet">
+        <script src="toxic-soup.js"></script>
+        <style>
+          .news-list {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+          }
+          
+          .news-item {
+            border-left: 4px solid #2ea3c4;
+            padding: 15px 20px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+          }
+          
+          .news-item:hover {
+            background-color: #ffe9e9;
+          }
+          
+          .news-date {
+            color: #888;
+            font-size: 0.9em;
+            font-weight: bold;
+          }
+          
+          .news-title {
+            margin: 8px 0 0 0;
+            font-size: 1.1em;
+            color: #333;
+          }
+          
+          .news-title a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+          }
+          
+          .news-title a:hover {
+            text-decoration: underline;
+          }
+          
+          .new-badge {
+            display: inline-block;
+            background-color: #ff4444;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-left: 8px;
+            font-weight: bold;
+          }
+        </style>
+        <header>
+  <nav>
+    <ul>
+      <li><a href="4725.html">回首頁</a></li>
+      <li><a href="about.html">介紹</a></li>
+      <li><a href="draw.html">最新消息</a></li>
+    </ul>
+  </nav>
+</header>
+</head>
+<body>
+<aside class="floating-sidebar">
+  <nav class="my-favorites">
+    <h2>及時天氣</h2>
+    <ul>
+      <li><a href="#">24°C 多雲時陰</a></li>
+      <li><a href="#">降雨機率：10%</a></li>
+      <li><a href="#">濕度：62%</a></li>
+      <li><a href="#">風速：16 公里/時</a></li>
+    </ul>
+  </nav>
+  <nav class="status-box">
+    <h2>毒雞湯</h2>
+    <div id="toxic-soup-text" style="
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+      padding: 15px;
+      background-color: #fff8f0;
+      border-radius: 4px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      font-style: italic;
+      animation: fadeInOut 1s ease-in-out;
+    "></div>
+  </nav>
+  <style>
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  </style>
+</aside>
+
+<div id="wrap">
+  <main>
+    <h1>最新消息</h1>
+    
+    <div class="news-list">
+      <div class="news-item">
+        <div class="news-date">➜ 2026.04.01</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260407">卡特島創意會員4/8 11:00 a.m.開跑！</a>
+          <span class="new-badge">new</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2026.03.19</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260319b">2026 台中國際動漫節 貓貓蟲咖波</a>
+          <span class="new-badge">new</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2026.03.19</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260319a">2026 臺北國際插畫博覽會 貓貓蟲咖波暨四月新品上市</a>
+          <span class="new-badge">new</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2026.03.12</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260312">2026 貓貓蟲咖波臺灣百味快閃店-臺中站暨新品上市</a>
+          <span class="new-badge">new</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2026.02.10</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260210">奶泡貓咖啡-臺中驛店 結束營業公告與活動</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.01.23</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260123">2026 門市馬年新春活動來囉！</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.01.23</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260123">2026 台北國際動漫節 貓貓蟲咖波暨二月新品上市</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.01.12</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20260112">2026 台北國際電玩展 貓貓蟲咖波</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.30</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261230">2026 卡特島1月新品上市項目時間表</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.26</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261226">2026 第五屆卡特島市集</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.19</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261219">奶泡貓俱樂部-會員制度調整說明</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.12</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261212">2025 貓貓蟲咖波臺灣百味快閃店-高雄站暨新品上市</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.10</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261210">首爾插畫展SIF.20</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.05</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261205">官網限定｜聖誕節暖心回饋祭</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.01</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261201">2025 CAPOO RUN! 奇怪咖波大暴走—台中路跑限定店</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.12.01</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261201">中國信託X貓貓蟲咖波冬季活動快閃店</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="news-date">➜ 2025.11.07</div>
+        <div class="news-title">
+          <a href="https://www.carterislandtw.com/pages/news20261107">咖波屋-台北西門店 11/21盛大開幕！</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<a href="#wrap" id="top">TOP</a>
+
+</body>
+</html>

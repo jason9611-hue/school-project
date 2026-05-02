@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-hant-tw">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device"
+        <title>
+         
+        </title>
+        <link href="style.css" rel="stylesheet">
+        <script src="toxic-soup.js"></script>
+        <script>
+          function toggleInfo(id) {
+            const infoBox = document.getElementById(id);
+            infoBox.classList.toggle('show');
+          }
+        </script>
+        <header>
+  <img src="img/original.webp" alt="我的世界" class="header-image">
+  <nav>
+    <ul>
+      <li><a href="index.html">回首頁</a></li>
+      <li><a href="about.html">介紹</a></li>
+      <li><a href="draw.html">最新消息</a></li>
+    </ul>
+  </nav>
+</header>
+</head>
+<body>
+<aside class="floating-sidebar">
+  <nav class="my-favorites">
+    <h2>及時天氣</h2>
+    <ul>
+      <li><a href="#">24°C 多雲時陰</a></li>
+      <li><a href="#">降雨機率：10%</a></li>
+      <li><a href="#">濕度：62%</a></li>
+      <li><a href="#">風速：16 公里/時</a></li>
+    </ul>
+  </nav>
+  <nav class="status-box">
+    <h2>毒雞湯</h2>
+    <div id="toxic-soup-text" style="
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+      padding: 15px;
+      background-color: #fff8f0;
+      border-radius: 4px;
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      font-style: italic;
+      animation: fadeInOut 1s ease-in-out;
+    "></div>
+  </nav>
+  <style>
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  </style>
+</aside>
+
+<div class="images-gallery">
+  <div class="image-card">
+    <div class="image-box" onclick="toggleInfo('info1')">
+      <img src="img/Hi.jfif" alt="這是動物">
+    </div>
+    <div id="info1" class="info-box">
+      <h2>這是動物</h2>
+      <p>這是動物</p>
+      <a href="index.html"></a>
+    </div>
+  </div>
+
+  <div class="image-card">
+    <div class="image-box" onclick="toggleInfo('info2')">
+      <img src="img/1.jfif" alt="這是火腿">
+    </div>
+    <div id="info2" class="info-box">
+      <h2>這是火腿</h2>
+      <p>這是火腿</p>
+      <a href="index.html"></a>
+    </div>
+  </div>
+
+  <div class="image-card">
+    <div class="image-box" onclick="toggleInfo('info3')">
+      <img src="img/images.png" alt="這是橡皮擦">
+    </div>
+    <div id="info3" class="info-box">
+      <h2>這是橡皮擦</h2>
+      <p>這是橡皮擦</p>
+      <a href="index.html"></a>
+    </div>
+  </div>
+</div>    
+   
+<div id="wrap">    
+    <a herf="https://classroom.google.com/c/ODQwMjgxNzc5MzUz"target=c8></a> 
+    <br><iframe src=https://www.google.com/maps/embed?pb!1m18!1m12!1m3!1d24320.058384884673!2d121.51699605785444!3d25.0273433099122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99db9a2a94d%3A0x43e9034292df69b2!2z5ZyL56uL5Lit5q2j57SA5b-15aCC!5e0!3m2!1szh-TW!2stw!4v1773365322602!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/WkrdlsqHJWE?si=90bAskJRC2VjDMFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <a href="#wrap" id="top">TOP</a>
+</div>
+</main>    
+
+</body>
+</html>
